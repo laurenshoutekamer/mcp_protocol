@@ -327,5 +327,5 @@ def build_jsonrpc_error(req_id, number_error_code, txt_error_code, data_val_erro
 
 
 if __name__ == "__main__":
-    mcp_server = HTTPServer(("127.0.0.1", 12188), Handler)
+    mcp_server = HTTPServer(("0.0.0.0", 10036), Handler)
     mcp_server.serve_forever()
